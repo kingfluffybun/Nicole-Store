@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+nav {
+    background-color: seagreen;
+    width: 100%;
+    height: 10vh;
+    padding: 0 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 75vh;
+    height: 4vh;
+    border-radius: 30px;
+    background-color: white;
+}
+
+nav input {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    height: 4vh;
+    width: 75vh;
+    outline: none;
+}
+
+nav button {
+    border: none;
+    border-radius: 30px;
+    height: 4vh;
+    width: 8vh;
+    background-color: goldenrod;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    margin-left: auto;
+    flex-wrap: nowrap;
+}
+
+.icons span{
+    font-size: 28px;
+    color: goldenrod;
+    padding: 0 16px;
+}
+
+#icon img {
+    width: 200px;
+    height: 70px;
+}
+
+.nav-bar {
+    background-color: goldenrod;
+    width: 100%;
+    height: 4vh;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 30vh;
+    height: 100%;
+}
+
+.nav-bar li {
+    list-style: none;
+    padding: 0 48px;
+    color: white;
+}
+
+.nav-bar li:last-child {margin-left: auto;}
+
+body {
+    background-color: #eeeeee;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - 12vh);
+    margin-top: 2vh;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #E5E4E0;
+    border-radius: 30px;
+}
+
+.product img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.product-details {
+    border-radius: 0 0 30px 30px;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+    background-color: #f8f8f8;
+}
+
+.product-details h5 {
+    font-weight: normal;
+    color: #000000cc;
+}
+
+.product-option {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.product-option button {
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#buy-now {
+    width: 150px;
+    background-color: seagreen;
+    color: white;
+}
+
+#add-to-cart {
+    width: 125px;
+    color: black;
+}
