@@ -31,15 +31,18 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-left: auto; margin-right: auto;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    width: 75vh;
+    width: 50%;
     height: 4vh;
     border-radius: 30px;
     background-color: white;
+    border: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
 }
 
 nav input {
@@ -48,7 +51,7 @@ nav input {
     border-radius: 30px;
     padding: 0 20px;
     height: 4vh;
-    width: 75vh;
+    width: 100%;
     outline: none;
 }
 
@@ -56,27 +59,28 @@ nav button {
     border: none;
     border-radius: 30px;
     height: 3vh;
-    width: 5vh;
+    min-width: 5vh;
     margin: 0 5px 0 5px;
     background-color: goldenrod;
     color: white;
+    cursor: pointer;
 }
 
 .icons {
     display: flex;
-    margin-left: auto;
     flex-wrap: nowrap;
+    justify-content: flex-end;
 }
 
 .icons span{
     font-size: 28px;
     color: goldenrod;
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 #icon img {
-    width: 200px;
-    height: 70px;
+    width: 12em;
+    height: 4.5rem;
 }
 
 .nav-bar {
@@ -96,8 +100,9 @@ nav button {
 
 .nav-bar li {
     list-style: none;
-    padding: 0 48px;
     color: white;
+    padding: 0 2rem;
+    overflow: hidden;
 }
 
 .nav-bar li:last-child {margin-left: auto;}
@@ -116,7 +121,6 @@ body {
 }
 
 .banner-section {
-    height: calc(70vh - 14vh);
     width: 100%;
     padding: 5vh 0;
 }
@@ -153,8 +157,12 @@ body {
 }
 
 .categories {
-    margin: auto;
+    margin: auto; margin-top: 1rem;
     text-align: center;
+}
+
+.categories h3 {
+    font-weight: normal;
 }
 
 .category-box {
@@ -163,6 +171,7 @@ body {
     height: 200px;
     border-radius: 30px;
     margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 .product-section {
@@ -185,12 +194,13 @@ body {
     margin: auto auto 20px auto;
     background-color: #E5E4E0;
     border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
 .product img {
     object-fit: cover;
-    width: 240px;
-    height: 245px;
+    max-width: 240px;
+    max-height: 245px;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -202,8 +212,8 @@ body {
 .product-details {
     border-radius: 0 0 30px 30px;
     padding: 20px;
-    width: 295px;
-    height: 145px;
+    max-width: 295px;
+    max-height: 145px;
     background-color: #f8f8f8;
 }
 
@@ -234,4 +244,18 @@ body {
 #add-to-cart {
     width: 125px;
     color: black;
+}
+
+@media screen and (max-width: 650px) {
+    .nav-bar {
+        visibility: hidden;
+    }
+
+    .icons {
+        visibility: hidden;
+    }
+
+    .search {
+        visibility: hidden;
+    }
 }
